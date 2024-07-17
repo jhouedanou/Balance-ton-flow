@@ -2,8 +2,9 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "watch-sass": "node compile-sass.js"
+        "watch-sass": "node compile-sass.js",
+        "build": "php artisan migrate --force"
+
     },
     "devDependencies": {
         "@popperjs/core": "^2.10.2",
