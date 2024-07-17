@@ -1,0 +1,1000 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+// Palette de couleurs
+$color-white: #ffffff;
+$color-off-white: #fefefe;
+$color-light-yellow: #ede886;
+$color-bright-yellow: #f8dc14;
+$color-similar-bright-yellow: #f7dc15;
+$color-neon-green: #00f401;
+$color-light-grey-green: #c0d3c6;
+$color-lime-green: #abcf50;
+$color-yellow-green: #adcd42;
+$color-soft-green: #89b498;
+$color-dark-green: #499740;
+$color-deep-green: #0a862e;
+$color-similar-deep-green: #0a862d;
+$color-forest-green: #345e42;
+$color-black: #000000;
+$primary: $color-deep-green;
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+  font-family: "aldo_the_apacheregular";
+  src:
+    url("../fonts/aldotheapache-webfont.woff2") format("woff2"),
+    url("../fonts/aldotheapache-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.tiktok-embed {
+  margin: 0px auto !important;
+  padding: 5px;
+}
+.navbar-dark {
+  background-color: $color-off-white !important;
+  //add a material shadow
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  //add a top border with the color-forest-green
+  border-top: 5px solid $color-forest-green;
+  .nav-link {
+    font-family: "aldo_the_apacheregular", sans-serif !important;
+    color: $color-forest-green;
+    font-size: 2em !important;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+
+    border-left: 2px #000 ridge;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    padding-left: 1em !important;
+  }
+}
+.float-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: auto !important;
+
+  .img-cover {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.navbar-brand {
+  position: relative;
+  width: 220px;
+  height: auto;
+  img {
+    position: absolute;
+    margin: 0 auto;
+    width: 220px;
+    animation: heartbeat 1s infinite;
+    -webkit-animation: heartbeat 1s infinite;
+    &:hover {
+      animation: heartbeat 1s infinite;
+      -webkit-animation: heartbeat 1s infinite;
+    }
+  }
+}
+#navbarSupportedContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  li {
+    &:hover {
+      a {
+        color: $color-bright-yellow;
+      }
+    }
+    &.active {
+      a {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+.bloc-contestant {
+  .card {
+    border: none !important;
+  }
+}
+
+.bouton {
+  &.btn-bloc.eco {
+  }
+}
+#prenav {
+  background-color: $color-deep-green;
+  background-image: url(/assets/images/prenav.png);
+  .container {
+    padding: 0.75rem 0;
+  }
+  .d-flex {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .text-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    a {
+      display: flex;
+      text-transform: uppercase;
+      gap: 1rem;
+      font-family: "aldo_the_apacheregular", sans-serif;
+      font-size: 1.2em;
+      padding: 0.85rem 1rem;
+      color: $color-forest-green;
+      background-color: $color-light-yellow;
+      border: 2px solid $color-forest-green;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      &:hover {
+        color: $color-white;
+        background-color: $color-forest-green;
+      }
+    }
+  }
+}
+.banner-home {
+  background: url(/assets/images/tengrai_image_1721058031_8376853.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  min-height: 80vh;
+  position: relative;
+  border-bottom: 6px solid $color-deep-green;
+
+  .container {
+    min-height: 80vh;
+    height: 100% !important;
+    position: relative;
+    overflow: hidden;
+
+    .row {
+      height: 100% !important;
+      display: flex;
+      align-items: center;
+      min-height: 80vh;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .right-banner {
+    background: rgb(171 208 83 / 37%) !important;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    max-height: 345px;
+    max-width: 345px;
+    height: 100%;
+    width: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+
+    h2 {
+      font-family: "aldo_the_apacheregular", sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 4em;
+      text-shadow: 1px 1.4px 1.2px rgba(0, 0, 0, 1);
+      padding: 0.05em 0;
+    }
+    .busta {
+      margin: 0 auto;
+      width: 120px;
+      height: auto;
+      position: relative;
+    }
+  }
+}
+.banner {
+  height: 550px;
+}
+@function random-color() {
+  $colors: $color-white, $color-off-white, $color-light-yellow, $color-bright-yellow, $color-similar-bright-yellow,
+    $color-neon-green, $color-light-grey-green, $color-lime-green, $color-yellow-green, $color-soft-green,
+    $color-dark-green, $color-deep-green, $color-similar-deep-green, $color-forest-green;
+  @return nth($colors, random(length($colors)));
+}
+
+.bubble-container {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  opacity: 0.25;
+}
+
+@for $i from 1 through 25 {
+  .bubble-#{$i} {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: float 20s infinite ease-in-out;
+
+    $size: random(100) + 20px;
+    width: $size;
+    height: $size;
+
+    left: #{random(100)}vw;
+    top: #{random(100)}vh;
+
+    background-color: random-color();
+
+    animation-delay: -#{random(20)}s;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+p {
+  text-align: justify;
+  text-shadow: none;
+  color: $color-forest-green;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+h2.categorie-home {
+  font-family: "aldo_the_apacheregular", sans-serif;
+  font-size: 4em;
+}
+.bloc-contestant {
+  margin-bottom: 2rem;
+
+  .content-cand.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+
+    .img-galerie {
+      position: relative;
+
+      .float-photo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+
+        .img-cover {
+          width: 60px;
+          height: 60px;
+          border: 2px solid $color-white;
+          background: white;
+        }
+      }
+
+      .img-one {
+        position: relative;
+
+        video {
+          width: 100%;
+          height: auto;
+        }
+
+        .v-plus.vue-pop {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $color-white;
+          padding: 20px;
+          border-radius: 50%;
+          font-size: 4em;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          width: 180px;
+          height: 180px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          i {
+            font-size: 2em !important;
+          }
+          &:hover {
+            background-color: rgba($color-forest-green, 0.9);
+          }
+
+          .fas.fa-search-plus {
+            &::before {
+              content: "\f144"; // FontAwesome play icon
+            }
+          }
+        }
+      }
+
+      .cand-name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color-forest-green, 0.8);
+        padding: 10px;
+
+        a {
+          color: $color-white;
+          font-family: "Bai Jamjuree", sans-serif;
+
+          font-size: 1.2em;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .bouton.btn-bloc.eco {
+      padding: 15px;
+      background-color: $color-off-white;
+
+      .cpt-vote {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .counter-home {
+          font-size: 0.9em;
+          padding: 5px 10px;
+        }
+      }
+
+      .fill-button {
+        .voter {
+          width: 100%;
+          background-color: $color-deep-green;
+          color: $color-white;
+          border: none;
+          padding: 10px;
+          font-family: "Bai Jamjuree", sans-serif;
+
+          font-size: 1.1em;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: $color-forest-green;
+          }
+        }
+      }
+    }
+  }
+}
+.cpt-vote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+
+  .counter {
+    display: flex;
+    gap: 0.5rem;
+
+    .counter-home {
+      font-family: "aldo_the_apacheregular", sans-serif;
+      font-size: 1.2em;
+      padding: 0.3em 0.6em;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+
+      &.bg-info {
+        background-color: $color-light-grey-green !important;
+        color: $color-forest-green !important;
+      }
+
+      &.bg-warning {
+        background-color: $color-light-yellow !important;
+        color: $color-forest-green !important;
+      }
+
+      i {
+        font-size: 2.8em; // Increase this value to make the icon bigger
+      }
+    }
+  }
+}
+#yeiu {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px; // Augmenté pour une ombre plus visible
+    box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.7); // Valeurs ajustées pour une ombre plus forte
+    z-index: 1;
+  }
+}
+footer.bg-dark {
+  background-color: #328226 !important ;
+  padding: 3rem 0;
+  background-image: url(/assets/images/prenav.png) 116% -11% no-repeat;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .btn-outline-light {
+    border-color: $color-light-yellow;
+    color: $color-light-yellow;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-light-yellow;
+      color: $color-forest-green;
+    }
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    li {
+      a {
+        color: white;
+        font-family: "aldo_the_apacheregular", sans-serif;
+        font-size: 2.2em;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          color: $color-bright-yellow;
+        }
+      }
+    }
+  }
+
+  .text-center.p-3 {
+    background-color: darken($color-forest-green, 5%) !important;
+    display: none !important;
+
+    p {
+      color: white !important;
+
+      font-family: "Bai Jamjuree", sans-serif;
+      margin: 0;
+    }
+  }
+}
+.bloc-contestant {
+  padding: 2em;
+}
+.form-signin {
+  background: url(/assets/images/fond-11.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  fieldset.border {
+    background: #fefefe !important;
+  }
+  .divider {
+    display: none !important;
+  }
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: $color-off-white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-family: "aldo_the_apacheregular", sans-serif;
+    color: $color-forest-green;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-floating {
+    margin-bottom: 1rem;
+
+    input {
+      border: 2px solid $color-light-grey-green;
+      &:focus {
+        border-color: $color-deep-green;
+        box-shadow: 0 0 0 0.2rem rgba($color-deep-green, 0.25);
+      }
+    }
+
+    label {
+      color: $color-forest-green;
+    }
+  }
+
+  .btn-primary {
+    background-color: $color-deep-green;
+    border: none;
+    font-family: "aldo_the_apacheregular", sans-serif;
+    font-size: 1.2em;
+    &:hover {
+      background-color: $color-forest-green;
+    }
+  }
+
+  .divider {
+    position: relative;
+    text-align: center;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background-color: $color-light-grey-green;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+  }
+
+  fieldset {
+    border-color: $color-light-grey-green;
+    legend {
+      color: $color-forest-green;
+      font-style: italic;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .connect-icon {
+      a {
+        display: inline-block;
+        padding: 0.5rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .text-end {
+    margin-top: 1rem;
+    a {
+      color: $color-deep-green;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.main {
+  padding: 0em 0em 0em 0em !important;
+  min-height: 60vh;
+}
+.bloc-contestant {
+  transition: opacity 0.3s ease;
+  &:hover {
+    .card {
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.bloc-contestant.dimmed {
+  opacity: 0.25;
+}
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10000;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 2px solid $color-off-white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mouse-wheel {
+  width: 4px;
+  height: 8px;
+  background-color: $color-off-white;
+  border-radius: 2px;
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+}
+#tagline {
+  max-width: 50vw;
+  font-family: "aldo_the_apacheregular", sans-serif;
+  color: white;
+  font-size: 3em;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 15vh;
+}
+.btn-bloc {
+  background: url(/assets/images/fond-11.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.row.mb-4 {
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  .btn-link {
+    font-size: 11px !important;
+  }
+  .fd-flex {
+    padding: 0;
+    margin: 0;
+    .form-check {
+      margin: 0;
+      display: flex;
+    }
+    input[type="checkbox"] {
+      margin-left: 1em;
+    }
+    * {
+      font-size: 11px !important;
+    }
+  }
+  .form-check {
+    display: flex;
+    align-items: center;
+
+    label {
+      color: $color-forest-green;
+      margin-left: 5px;
+    }
+  }
+
+  .btn-link {
+    color: $color-deep-green;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($color-deep-green, 10%);
+    }
+  }
+}
+fieldset.border {
+  border: 2px solid $color-light-grey-green;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+
+  legend {
+    font-family: "Bai Jamjuree", sans-serif;
+    color: $color-forest-green;
+    font-style: italic;
+    padding: 0 10px;
+  }
+
+  .social {
+    .form-group.connect {
+      display: flex;
+      justify-content: center;
+      // gap: 1rem;
+      // margin: 1.5rem 0;
+
+      .connect-icon {
+        a {
+          display: inline-block;
+          padding: 10px;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .text-end {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .btn {
+      background-color: $color-deep-green;
+      color: $color-white;
+      font-family: "aldo_the_apacheregular", sans-serif;
+      font-size: 1.2em;
+      padding: 0.5rem 2rem;
+      border: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $color-forest-green;
+      }
+    }
+  }
+}
+.page-title,
+h2.categorie-top.text-center {
+  font-family: "aldo_the_apacheregular", sans-serif;
+  font-size: 4em;
+}
+main {
+  position: relative;
+  &::after {
+    content: "";
+    margin: auto;
+    height: 150px;
+    width: 100vw;
+    background: url(/assets/images/texturebg.png);
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    background-size: 100vw;
+  }
+}
+.damain {
+  padding: 1em;
+  form {
+    background: white;
+    width: 60vw;
+    padding: 1em;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+#twhe {
+  padding: 60px 15px !important;
+}
+//media query for 1024px
+@media screen and (max-width: 1023px) {
+  #navbarSupportedContent {
+    display: none;
+    &.show {
+      display: block;
+    }
+    li {
+      a {
+        border-left: 0px white solid !important;
+      }
+    }
+  }
+  .page-title,
+  h2.categorie-top.text-center {
+    font-size: 3em;
+  }
+
+  .damain {
+    form {
+      width: 80vw;
+    }
+  }
+
+  main {
+    &::after {
+      height: 100px;
+    }
+  }
+
+  #twhe {
+    padding: 40px 10px !important;
+  }
+}
+
+.page-content__wrap {
+  padding: 1em 1em 6em 1em;
+}
+
+.lesuser {
+}
+.right-banner {
+  p {
+    font-family: "Nunito", sans-serif;
+
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.text-end.logout {
+  display: flex;
+  align-items: center;
+
+  .user-badge {
+    display: flex;
+    align-items: center;
+    background-color: $color-light-grey-green;
+    color: $color-forest-green;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+
+  p {
+    margin: 0 1rem;
+  }
+
+  .btn {
+    background-color: $color-deep-green;
+    color: $color-white;
+    font-family: "aldo_the_apacheregular", sans-serif;
+    font-size: 1.2em;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-forest-green;
+    }
+  }
+}
+.social-links {
+  margin-top: 0rem !important;
+}
+.pastor {
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: $color-forest-green;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    color: $color-dark-green;
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+}
+#lmew {
+  background-color: $color-light-grey-green;
+  border: none;
+  font-family: "aldo_the_apacheregular", sans-serif;
+  font-size: 1.2em;
+  margin-top: 1em;
+  color: $color-forest-green;
+  width: 100%;
+  &:hover {
+    background: $color-forest-green;
+    color: $color-light-grey-green;
+  }
+}
+
+.damain {
+  .form-signin {
+    .text-end {
+      a {
+        background-color: #0a862e;
+        border: none;
+        font-family: "aldo_the_apacheregular", sans-serif;
+        font-size: 1.2em;
+        margin-top: 1em;
+      }
+    }
+  }
+}

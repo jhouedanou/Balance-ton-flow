@@ -1,0 +1,12 @@
+.voyager .side-menu .navbar-header {
+    background: #fff;
+    border-color: #fff;
+}
+.voyager .navbar .navbar-header .navbar-brand, .voyager .navbar.navbar-default .navbar-header .navbar-brand {
+    color: #000000;
+}
+.voyager .breadcrumb a {
+    color: #da2020;
+}
+
+
